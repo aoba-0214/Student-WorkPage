@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生作品 - 卒業修了研究展2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Lab_workpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <!-- <div class="logo">
+                <a href="index.html" style="color: inherit; text-decoration: none;">
+                    <h1>札幌市立大学<br>デザイン学部・デザイン研究科<br>卒業修了研究展2026</h1>
+                </a>
+            </div> -->
+             <div class="header-left">
+                <img src="images/scu-logo.png" alt="ロゴ" class="scu-logo">
+            </div>
+            <nav class="top-nav">
+                <!-- ハンバーガー -->
+                <button class="menu-btn" onclick="toggleMenu()">
+                 <img src="images/menu-icon.gif" alt="メニュー">
+                 </button>
+
+                <ul class="nav-list">
+                  <li><a href="index.html#overview">開催概要</a></li>
+                  <li><a href="workpage.html">学生作品</a></li>
+                  <li><a href="index.html#access">会場MAP</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="header-center">
+                    <h1 class="header-title">卒業研究作品</h1>
+                    <img class="boygirl-illust" src="images/boygirl.gif" alt="boygirl">
+            
+                    </div>
+
+        <div class="content-body">
+
+                    <!-- <h2 class="Lab-course">人間情報デザインコース</h2>
+                    <p>の研究室</p> -->
+
+            <div class="row-title">
+
+                <h2 class="section-title">人間情報デザインコース</h2>
+                <p>の研究室</p>
+                
+                     <!-- ▼▼ ここから主体別/研究室別のボタンー ▼▼ -->
+                    <div class="sort-buttons">
+
+                        <div class="sort-buttonsLab">
+                            <a onclick="sortByLab()">研究室別</a>                         
+                        </div>
+                        
+                        <div class="sort-buttonsType">
+                            <a onclick="sortByType()">主体別</a>
+                        </div>
+
+                    </div>
+            
+            </div>
+
+                        <div class="lab-grid">
+
+                            <a href="workpage.html?data-lab=石井ゼミ" class="lab-window">
+                                <img src="lab_window/window01.png" alt="石井ゼミ">
+                                <p class="lab-name">石井ゼミ</p>
+                                
+                                      <p class="lab-word">　ヒューマンコンピュータインタラクション　</p>
+                                      <p class="lab-word">　人間工学　</p>
+                                      <p class="lab-word">　電子工作　</p>
+                                 
+                            </a>
+
+                            <a href="workpage.html?data-lab=伊藤・桝田ゼミ" class="lab-window" >
+                                <img src="lab_window/window02.png" alt="伊藤・桝田ゼミ">
+                                <p class="lab-name">伊藤・桝田ゼミ</p>
+                                <p class="lab-word">　UX/UIデザイン　</p>
+                                <p class="lab-word">　プロダクトデザイン　</p>
+                            </a>
+
+                            <a href="workpage.html?data-lab=大渕ゼミ" class="lab-window">
+                                <img src="lab_window/window03.png" alt="大渕ゼミ">
+                                <p class="lab-name">大渕ゼミ</p>
+                                <p class="lab-word">　アプリケーション開発</p>
+                                <p class="lab-word">　IT活用　</p>
+                                <p class="lab-word">　地域貢献　</p>
+                            </a>
+                            
+                            <a href="workpage.html?data-lab=金・柿山ゼミ" class="lab-window">
+                                <img src="lab_window/window03.png" alt="金・柿山ゼミ">
+                                <p class="lab-name">金・柿山ゼミ</p>
+                                <p class="lab-word">　インターフェースデザイン　</p>
+                                <p class="lab-word">　感性評価　</p>
+                                <p class="lab-word">　価値デザイン　</p>
+                            </a>
+
+                            <a href="workpage.html?data-lab=三谷・矢久保ゼミ" class="lab-window">
+                                <img src="lab_window/window04.png" alt="三谷・矢久保ゼミ">
+                                <p class="lab-name">三谷・矢久保ゼミ</p>
+                                <p class="lab-word">　ロボットメカトロニクスデザイン　</p>
+                                <p class="lab-word">　インターモダリティ　</p>
+                                <p class="lab-word">　音響情報処理　</p>
+                            </a>
+
+                            <a href="workpage.html?data-lab=福田・横溝ゼミ" class="lab-window">
+                                <img src="lab_window/window05.png" alt="福田・横溝ゼミ">
+                                <p class="lab-name">福田・横溝ゼミ</p>
+                                <p class="lab-word">　実践知　</p>
+                                <p class="lab-word">　対話　</p>
+                                <p class="lab-word">　遊び　</p>
+                                <p class="lab-word">　デザイン知　</p>
+                                <p class="lab-word">　ビジュアルコミュニケーション　</p>
+                            </a>
+
+                            <a href="workpage.html?data-lab=藤木・松永ゼミ" class="lab-window">
+                                <img src="lab_window/window07.png" alt="藤木・松永ゼミ">
+                                <p class="lab-name">藤木・松永ゼミ</p>
+                                <p class="lab-word">　メディアアート　</p>
+                                <p class="lab-word">　コンピュータグラフィックス　</p>
+                                <p class="lab-word">　仮想身体　</p>
+                            </a>
+
+                            <a href="workpage.html?data-lab=細谷・吉田ゼミ" class="lab-window">
+                                <img src="lab_window/window06.png" alt="細谷・吉田ゼミ">
+                                <p class="lab-name">細谷・吉田ゼミ</p>
+                                <p class="lab-word">　インターフェースデザイン　</p>
+                                <p class="lab-word">　プロダクトデザイン　</p>
+                                <p class="lab-word">　ITAIの活用　</p>
+                                <p class="lab-word">　電子工作　</p>
+                            </a>
+                
+
+                        </div>
+                       <h2 class="Lab-course">人間空間デザインコース</h2>
+                    <p>の研究室</p>
+                    
+                    <div class="lab-grid">
+                    
+                    <a href="workpage.html?data-lab=斎藤ゼミ" class="lab-window">
+                                <img src="lab_window/window06.png" alt="斎藤ゼミ">
+                                <p class="lab-name">斎藤ゼミ</p>
+                                <p class="lab-word">　都市建築環境デザイン　</p>
+                                 
+                    </a>
+
+                    <a href="workpage.html?data-lab=椎野ゼミ" class="lab-window">
+                                <img src="lab_window/window03.png" alt="椎野ゼミ">
+                                <p class="lab-name">椎野ゼミ</p>
+                                <p class="lab-word">　緑地デザイン　</p>
+                                 
+                    </a>
+
+                    <a href="workpage.html?data-lab=西川ゼミ" class="lab-window">
+                                <img src="lab_window/window02.png" alt="西川ゼミ">
+                                <p class="lab-name">西川ゼミ</p>
+                                <p class="lab-word">　建築構造　</p>                              
+                    </a>
+
+                      <a href="workpage.html?data-lab=大島ゼミ" class="lab-window">
+                                <img src="lab_window/window01.png" alt="大島ゼミ">
+                                <p class="lab-name">大島ゼミ</p>
+                                <p class="lab-word">　環境　</p>
+                                <p class="lab-word">　ランドスケープ　</p> 
+                    </a>
+
+                     <a href="workpage.html?data-lab=金子ゼミ" class="lab-window">
+                                <img src="lab_window/window07.png" alt="金子ゼミ">
+                                <p class="lab-name">金子ゼミ</p>
+                                <p class="lab-word">　建築意匠　</p>
+                                <p class="lab-word">　建築構法　</p>
+                                <p class="lab-word">　フィールドワーク　</p> 
+                    </a>
+
+                    <a href="workpage.html?data-lab=森ゼミ" class="lab-window">
+                                <img src="lab_window/window05.png" alt="森ゼミ">
+                                <p class="lab-name">森ゼミ</p>
+                                <p class="lab-word">　都市デザイン　</p>
+                                <p class="lab-word">　都市計画　</p>
+                    </a>
+
+                     <a href="workpage.html?data-lab=山田ゼミ" class="lab-window">
+                                <img src="lab_window/window04.png" alt="山田ゼミ">
+                                <p class="lab-name">山田ゼミ</p>
+                                <p class="lab-word">　建築計画　</p>
+                                <p class="lab-word">　建築設計　</p>
+                    </a>
+
+                    <a href="workpage.html?data-lab=小林ゼミ" class="lab-window">
+                                <img src="lab_window/window01.png" alt="小林ゼミ">
+                                <p class="lab-name">小林ゼミ</p>
+                                <p class="lab-word">　社会デザイン　</p>
+                                <p class="lab-word">　コミュニケーションメディアデザイン　</p>
+                    </a>
+
+                    <a href="workpage.html?data-lab=片山ゼミ" class="lab-window">
+                                <img src="lab_window/window05.png" alt="片山ゼミ">
+                                <p class="lab-name">片山ゼミ</p>
+                                <p class="lab-word">　交流拠点　</p>
+                                <p class="lab-word">　コミュニティデザイン　</p>
+                    </a>
+
+                    <a href="workpage.html?data-lab=小宮ゼミ" class="lab-window">
+                                <img src="lab_window/window02.png" alt="小宮ゼミ">
+                                <p class="lab-name">小宮ゼミ</p>
+                                <p class="lab-word">　ユニバーサルデザイン　</p>
+                                <p class="lab-word">　遊びのデザイン　</p>
+                    </a>
+
+                    <a href="workpage.html?data-lab=石田ゼミ" class="lab-window">
+                                <img src="lab_window/window03.png" alt="石田ゼミ">
+                                <p class="lab-name">石田ゼミ</p>
+                                <p class="lab-word">　サウンドビジュアル　</p>
+                                <p class="lab-word">　メディア空間　</p>
+                                <p class="lab-word">　ライブコーディング　</p>
+                    </a>
+
+                    <a href="workpage.html?data-lab=須之内ゼミ" class="lab-window">
+                                <img src="lab_window/window07.png" alt="須之内ゼミ">
+                                <p class="lab-name">須之内ゼミ</p>
+                                <p class="lab-word">　メディアアーツ　</p>
+                                <p class="lab-word">　アーカイブ情報学　</p>
+                    </a>
+
+                        
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+
+             <div class="SNS-icon">
+                <li><a href="https://www.instagram.com/scu_sotsuten_2026?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="images/Instagram.png" alt="アイコン"></a></li>
+            
+            <img src="images/x.png" alt="アイコン">
+            </div>
+
+            <p>公式InstagramとXにて情報発信中</p>
+            <br>
+            <p>&copy; 2026 Sapporo City University</p>
+             <img src="images/footer.png" class="wood" alt="">
+        </div>
+    </footer>
+
+
+    <script src="workpage_item/script.js"></script>
+
+</body>
+
+</html>        
